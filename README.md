@@ -49,15 +49,12 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 ---
 
 ## 🚀 Key Findings
-- **Countries with the highest churn**: Australia, France, Germany, Netherlands and Norway top the list. Their churn rates approach 
-100, meaning almost all customers in those markets bought only once during the observed period  
-- **Total quantity sold by country**: As expected, the United Kingdom dominates overall volume, followed (at a much smaller scale) by Ireland, Norway, France and Germany.  
-- **Average unit price by product**: The ten products shown command the highest mean prices; they are typically large decorative items (e.g., wall clocks, cake stands) rather than low-ticket trinkets  
-- **Top-5 products by sales value**: High-velocity + mid-to-high price point gives these five items the largest revenue contributions. 
-- **Unique customers per country**: Again the United Kingdom is by far the largest base, but several EU markets contribute dozens of unique buyers each.
-- **Average churn rate**: Overall, about 86% of customers are single-purchase, so retention efforts have huge room for improvement.
-- **Products driving repeat purchases**: Repeat-customer spend concentrates around decorative homeware (e.g., Red Woolly Hottie, Regency Cake-stand, Babushka Boxes, Chilli Lights, Hanging Heart T-Light Holder). These items resonate strongly enough for customers to buy again.
-- **Behavioral Insight**: Customers with more than 3 distinct purchase days are **70% less** likely to churn.
+- **Busiest months**: Strong ramp from spring to late-year; peak months are in Q4 with notable strength in Nov–Dec. Weekday seasonality shows higher demand toward the end of the week and weekends.
+- **Accurate forecast method**: A lightweight hybrid of seasonal naive (12-month seasonality) plus 3-month moving average delivered MAPE ≈ 9.5% and MAE ≈ 10,859 on the final 3 months. This is a solid baseline; can be enhanced with richer models if needed.
+- **Business implications**:
+   - Plan higher production and logistics capacity for Q4 and late-week spikes.
+   - Promotions scheduled mid–late week may yield outsized returns.
+   - Inventory holdings should reflect the next-month forecast of ~120,162 versus a current benchmark stock of ~151 units (benchmark likely needs to be in the same unit basis).
 
 ---
 
