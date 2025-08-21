@@ -44,7 +44,7 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 
 ## 📊 Dashboard Preview
 
-![Dashboard Overview](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/e-commerce%20dashboard.png)
+![Dashboard Overview](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(6).png)
 
 ---
 
