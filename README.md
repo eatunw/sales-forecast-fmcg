@@ -59,8 +59,8 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 ---
 
 ## 📈 Visualizations & Analysis
-1. **KPI Cards**  
-   - ![Total vs. churned customers & churn rate (%)](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20132000.png)  
+1. **Brand Performance & Inventory Health**  
+   - ![This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management. (%)](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20132000.png)  
 2. **Top 10 Countries by Churn Rate**
    - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20132000.png)  
 3. **Total Number of Sales Over Time**
