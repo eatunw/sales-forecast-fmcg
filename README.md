@@ -26,7 +26,11 @@ This project addresses the question: *“What will sales look like in the coming
    - Sales Volume
    - Revenue
 
-
+# Tools & Technologies
+Tool	Purpose
+Python (Pandas, Matplotlib)	Data cleaning, time-series analysis, trend visualization
+Excel	Pivot tables for quick aggregation and validation
+Power BI	Forecasting visuals, KPI dashboards
 
  
 FMCG-Sales-Forecasting/
