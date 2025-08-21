@@ -27,17 +27,17 @@ This project addresses the question: *“What will sales look like in the coming
    - Revenue
  
 
-All data cleaning—filtering nulls, handling negative quantities, standardizing dates—was done via python scripts in the **`SQL/`** folder. 
+All data cleaning—filtering nulls, handling negative quantities, standardizing dates—was done via python scripts in jupyter notebook in the **`Sales_Forecasting.ipynb/`** folder. 
 
 ---
 
 ## 🛠 Tools & Technologies
-| Tool               | Purpose                                      |
-|--------------------|----------------------------------------------|
-| **SQL**            | Data cleaning, transformation, churn logic   |
-| **Power BI**       | Dashboard design, visuals, interactive filters |
-| **Git & GitHub**   | Version control and portfolio hosting        |
-| **Excel**| Quick initial exploration and sanity checks  |
+| Tool                          | Purpose                                          |
+|-------------------------------|--------------------------------------------------|
+| **Jupyter notebook (python)** | Data cleaning, transformation, standardization   |
+| **Power BI**                  | Dashboard design, visuals, interactive filters   |
+| **Git & GitHub**              | Version control and portfolio hosting            |
+| **Excel**                     | Pivot tables for quick aggregation and validation|
 
 
 ---
