@@ -44,7 +44,7 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 
 ## 📊 Dashboard Preview
 
-![Dashboard Overview](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(6).png)
+![Dashboard Overview](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(6).png?raw=true)
 
 ---
 
@@ -60,7 +60,7 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 
 ## 📈 Visualizations & Analysis
 1. **Brand Performance & Inventory Health**  
-   - ![This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management. (%)](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture2.png)
+   - ![This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management. (%)](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture2.png?raw=true)
    This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management.
    - *Major Stock Imbalance for MiBrand3*: WBrand3 has an alarmingly high level of stock available relative to its actual sales. This indicates severe overstocking, which ties up capital, increases storage costs, and risks obsolescence or spoilage.
    - *Efficient Performers*: Brands like Redrand1, Redrand2, SrBrand1, and the YoBrand series show a much healthier ratio, with sales figures much closer to their stock levels. This suggests better demand forecasting and inventory turnover for these brands.
@@ -74,9 +74,9 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 2. **Category-Wise Sales & Inventory**
 
    The following charts break down performance by product category, which is crucial for strategic planning.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture5.png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture5.png?raw=true)
       - *Revenue Leadership*: Milk is the undisputed revenue leader (€382,439.76), contributing the largest share of total income. This is followed by Yogurt (€180,500.38) and Ready Meals (€169,309.49). This highlights which categories are the biggest cash cows for the business.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture3.png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture3.png?raw=true)
       - *Volume vs. Value*: While Milk leads in revenue, the relationship between its units_sold and stock_available needs to be compared with the first chart to see which specific brands are driving this. The high revenue suggests Milk may have a higher average selling price or simply much higher volume.
       - *Niche Categories*: Juice and Snack Bar generate significantly lower revenue. This doesn't necessarily mean they are underperforming; they could be newer categories or have different strategic roles.
         
@@ -88,11 +88,11 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 3. **Sales Trend & Seasonality**
 
    The time-series analyses reveal strong, predictable patterns in consumer demand.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/vizual(1).png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/vizual(1).png?raw=true)
       - *Clear Growing Trend*: The 3-month Moving Average (3M MA) clearly shows an upward trend in sales since early 2022, indicating healthy business growth. The trend is not perfectly smooth, showing the impact of seasonality.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(2).png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(2).png?raw=true)
       - *Pronounced Monthly Seasonality*: Sales are highly seasonal. Peaks occur around Month 1 (January) and Month 8 (August). The high in January could be post-holiday replenishment or New Year's resolution buying (e.g., healthy snacks, yogurt). The August peak likely corresponds to summer holidays and increased consumption of refreshments.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(4).png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(4).png?raw=true)
       - *Consistent Daily Demand*: Sales distribution across weekdays is remarkably consistent. There is no significant "weekend spike" or "Monday slump." This suggests stable, daily consumption habits typical of essential FMCG goods.
 
 - **Recommendation**:
@@ -104,10 +104,10 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 4. **Sales Forecast**
 
    The forecast predicts future sales, but the model's uncertainty is a critical factor.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(3).png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(3).png?raw=true)
       - *Positive Short-Term Forecast*: The forecast for the next 3 months shows strong growth, increasing from ~80,000 to over ~100,000 units. This aligns with the positive historical trend.
       - *High Model Uncertainty*: The extremely large numbers on the x-axis (1.735e^18) are a technical error in the chart, but the wide confidence intervals (in the image below) that fan out dramatically in 2025 are the true takeaway. This indicates that the model's forecast becomes highly uncertain the further out it projects.
-   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual.png)
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual.png?raw=true)
 
 - **Recommendation**:
 
