@@ -60,33 +60,70 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 
 ## 📈 Visualizations & Analysis
 1. **Brand Performance & Inventory Health**  
-   - ![This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management. (%)](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20132000.png)  
-2. **Top 10 Countries by Churn Rate**
-   - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20132000.png)  
-3. **Total Number of Sales Over Time**
-   - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20132752.png)  
-4. **Unique Customer Per Country**
-   - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20131909.png)  
-5. **Top Quantity Sold**
-   - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20131711.png)  
-6. **Average Unit Price**
-   - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20131745.png)  
-7. **Top Products for Retained Users**
-   - ![image](https://github.com/eatunw/ecommerce-churn-analysis/blob/main/Screenshot%202025-07-20%20131835.png)  
+   - ![This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management. (%)](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture2.png)
+   This chart compares total sales (units_sold) against total inventory (stock_available) by brand, revealing critical issues in inventory management.
+   - *Major Stock Imbalance for MiBrand3*: WBrand3 has an alarmingly high level of stock available relative to its actual sales. This indicates severe overstocking, which ties up capital, increases storage costs, and risks obsolescence or spoilage.
+   - *Efficient Performers*: Brands like Redrand1, Redrand2, SrBrand1, and the YoBrand series show a much healthier ratio, with sales figures much closer to their stock levels. This suggests better demand forecasting and inventory turnover for these brands.
+   - *MiBrand1 & MiBrand2 Concerns*: These brands also show a disparity where inventory significantly outpaces sales, though not as drastically as WBrand3. This warrants investigation into their sales strategies or product viability.
+
+- **Recommendation**:
+
+   - *Immediate Action on MiBrand3*: Conduct a deep-dive analysis into WBrand3. Implement aggressive sales promotions, discounts, or bundle deals to liquidate excess stock. Simultaneously, halt or drastically reduce new production/purchasing until inventory levels are corrected.
+   - *Review Supply Chain Parameters*: For overstocked brands, reassess safety stock levels, reorder points, and lead times with suppliers to prevent future overstocking.
+     
+2. **Category-Wise Sales & Inventory**
+
+   The following charts break down performance by product category, which is crucial for strategic planning.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture5.png)
+      - *Revenue Leadership*: Milk is the undisputed revenue leader (€382,439.76), contributing the largest share of total income. This is followed by Yogurt (€180,500.38) and Ready Meals (€169,309.49). This highlights which categories are the biggest cash cows for the business.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/Picture3.png)
+      - *Volume vs. Value*: While Milk leads in revenue, the relationship between its units_sold and stock_available needs to be compared with the first chart to see which specific brands are driving this. The high revenue suggests Milk may have a higher average selling price or simply much higher volume.
+      - *Niche Categories*: Juice and Snack Bar generate significantly lower revenue. This doesn't necessarily mean they are underperforming; they could be newer categories or have different strategic roles.
+        
+- **Recommendation**:
+
+   - Protect & Invest in Core Categories: Allocate marketing and prime shelf space to Milk and Yogurt to protect their dominant market position and maximize their high revenue generation.
+   - Strategic Review for Niche Categories: Analyze the profitability (not just revenue) of Juice and Snack Bars. Decide if they are worth further investment to grow or if they should be maintained as a complementary product range for customer convenience.
+     
+3. **Sales Trend & Seasonality**
+
+   The time-series analyses reveal strong, predictable patterns in consumer demand.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/vizual(1).png)
+      - *Clear Growing Trend*: The 3-month Moving Average (3M MA) clearly shows an upward trend in sales since early 2022, indicating healthy business growth. The trend is not perfectly smooth, showing the impact of seasonality.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(2).png)
+      - *Pronounced Monthly Seasonality*: Sales are highly seasonal. Peaks occur around Month 1 (January) and Month 8 (August). The high in January could be post-holiday replenishment or New Year's resolution buying (e.g., healthy snacks, yogurt). The August peak likely corresponds to summer holidays and increased consumption of refreshments.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(4).png)
+      - *Consistent Daily Demand*: Sales distribution across weekdays is remarkably consistent. There is no significant "weekend spike" or "Monday slump." This suggests stable, daily consumption habits typical of essential FMCG goods.
+
+- **Recommendation**:
+
+   - *Align Operations with Seasonality*: Plan marketing campaigns, promotions, and major stock deliveries in the months leading into the high-season periods (e.g., Q4 for January peak, Q2 for August peak).
+   - *Forecast-Driven Procurement*: Use these seasonality indices to create more accurate demand forecasts. Ensure inventory levels are built up ahead of peak months to avoid stockouts and drawn down during slower months to avoid overstock.
+   - *Staffing & Logistics*: The consistent daily pattern simplifies staffing and delivery scheduling, as demand is evenly spread throughout the week.
+  
+4. **Sales Forecast**
+
+   The forecast predicts future sales, but the model's uncertainty is a critical factor.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual%20(3).png)
+      - *Positive Short-Term Forecast*: The forecast for the next 3 months shows strong growth, increasing from ~80,000 to over ~100,000 units. This aligns with the positive historical trend.
+      - *High Model Uncertainty*: The extremely large numbers on the x-axis (1.735e^18) are a technical error in the chart, but the wide confidence intervals (in the image below) that fan out dramatically in 2025 are the true takeaway. This indicates that the model's forecast becomes highly uncertain the further out it projects.
+   - ![image](https://github.com/eatunw/sales-forecast-fmcg/blob/main/visual.png)
+
+- **Recommendation**:
+
+   - *Trust the Short-Term and Question the Long-Term*: Base Q1 operational plans (procurement, staffing) on the strong 3-month forecast. However, do not make long-term strategic investments or commitments based on the highly uncertain forecast for late 2024 and 2025.
+   - *Adopt a Rolling Forecast*: Instead of a static annual forecast, implement a rolling 3-6 month forecast that is updated monthly with actual sales data. This allows the business to be agile and adjust to changing market conditions reflected in the model's high uncertainty.
   
 
 ---
 
-## ✏️ SQL Scripts Overview
-- **`data_cleaning.sql`**  
-  - I converted `InvoiceDate` strings to DATETIME  
-  - I filtered out null `CustomerID` and negative quantities  
-  - Deduplicates cancelled transactions  
-- **`churn_analysis.sql`**  
-  - I derived each customer’s last purchase date  
-  - I calculated `DaysSinceLast` and flags `IsChurned` (90+ days)  
-  - I got aggregates churn metrics and cohorts
+## Summary of Key Conclusions
+- Inventory Crisis: The business has a critical overstocking issue, primarily with the MiBrand3 brand, which is draining profitability.
+- Category Powerhouses: Milk and Yogurt are the primary revenue drivers and should be the focus of strategic protection and growth.
+- Predictable Demand: Sales show strong and predictable seasonal peaks (Jan & Aug) and remarkably consistent daily patterns, enabling efficient operational planning.
+- Growth with Uncertainty: The business is on a strong growth trajectory in the short term, but the forecasting model lacks confidence in long-term predictions, advising a cautious and agile approach to planning beyond the next quarter.
 
+These insights provide a powerful foundation for data-driven decision-making across sales, marketing, supply chain, and finance functions within the company.
 
 ---
 
@@ -94,15 +131,3 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
   
 - **Contact**: [EMAIL](atundeemmanuel7@gmail.com)
 
-
- 
-FMCG-Sales-Forecasting/
-│── data/
-│   └── FMCG_2022_2024.csv
-│── notebooks/
-│   └── analysis.ipynb        # Python cleaning & EDA
-│── excel/
-│   └── pivots.xlsx           # Pivot tables summary
-│── powerbi/
-│   └── sales_forecast.pbix   # Power BI dashboard
-│── README.md
