@@ -14,7 +14,7 @@ FMCG businesses rely on accurate sales forecasts to:
 
 This project addresses the question: *“What will sales look like in the coming months, and which products or regions will drive them?”*
 
-  ## 📦 Dataset
+# 📦 Dataset
 - **Source**: Kaggle – FMCG_2022_2024.csv  
   https://www.kaggle.com/datasets/beatafaron/fmcg-daily-sales-data-to-2022-2024
 - Time Period: 2022 – 2024
@@ -31,13 +31,15 @@ All data cleaning—filtering nulls, handling negative quantities, standardizing
 
 ---
 
-## 🛠 Tools & Technologies
-| Tool                          | Purpose                                          |
-|-------------------------------|--------------------------------------------------|
-| **Jupyter notebook (python)** | Data cleaning, transformation, standardization   |
-| **Power BI**                  | Dashboard design, visuals, interactive filters   |
-| **Git & GitHub**              | Version control and portfolio hosting            |
-| **Excel**                     | Pivot tables for quick aggregation and validation|
+## Tools & Technologies
+
+| Tool                     | Purpose                                          |
+|--------------------------|--------------------------------------------------|
+| Jupyter Notebook (Python) | Data cleaning, transformation, standardization  |
+| Power BI                 | Dashboard design, visuals, interactive filters  |
+| Excel                    | Pivot tables for quick aggregation & validation |
+| Git & GitHub             | Version control & hosting                       |
+
 
 
 ---
