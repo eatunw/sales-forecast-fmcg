@@ -1,4 +1,4 @@
-# sales-forecast-fmcg
+# Sales-Forecast-fmcg
 Time series forecasting and demand planning for daily-level FMCG sales transactions 
 
 This project focuses on forecasting sales performance for a Fast-Moving Consumer Goods (FMCG) company using a real-world dataset. It demonstrates how to preprocess raw transactional data with Python (Pandas), analyze patterns in Excel pivot tables, and build interactive dashboards in Power BI to visualize trends and predictions.
